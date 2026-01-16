@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nayanam</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Box Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+
+<header>
+  <a href="#" class="logo">
+    <i class='bx bxs-low-vision'></i> Nayanam
+  </a>
+
+  <ul class="navbar">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#therapy">therapy</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#doctors">Doctors</a></li>
+    <li><a href="#blog">Blog</a></li>
+  </ul>
+
+  <button class="oval-btn" onclick="openForm()">BOOK APPOINTMENT</button>
+  <button class="oval-btn"><i class='bx bxs-phone-call bx-tada'></i> 7207402141 </button>
+  <style>
+    .oval-btn {
+      padding: 12px 30px;
+      border-radius: 30px;
+      border: none;
+      background-color: #0984e3;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</header>
+<style>
+.banner {
+  position: relative;   /* REQUIRED */
+  width: 90%;
+  max-width: 900px;
+}
+
+.banner img {
+  width: 170%;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+
+  /* RIGHT CORNER POSITION */
+  top: 200px;
+  right: 1000px;
+
+  /* RESET CENTERING */
+  left: auto;
+  bottom: auto;
+  transform: none;
+  margin: 0;
+
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px;
+  border-radius: 6px;
+opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+</style>
+</head>
+
+<body>
+<div class="banner" id="home"></div>
+  <img src="https://renoeyecare.com/wp-content/uploads/2021/10/Advanced-Eye-Surgery.jpg">
+  <div class="banner-text">
+   Your Vision Our Focus, </br>
+   that’s our priority...</pre>
+  </div>
+
+
+</body>
+</html>
+
+<h1> Nayanam Hospitals , Kurnool </h1>
+<h1>(First in Andhrapradesh)</h1>
+<img src="https://www.sparshhospital.com/wp-content/uploads/2024/12/Blog-Banner-Mobile_Ophthalmology-1.jpg">
+<!-- Contact Button -->
+<div style="margin:20px"></div>
+
+<script>
+function openForm() {
+  const win = window.open("", "", "width=500,height=550");
+
+  win.document.write(`
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Appointment</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #0984e3;
+    }
+    p {
+      text-align: center;
+    }
+    input, select, button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 8px;
+    }
+    button {
+      background-color: #4aa3da;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #000;
+      transition: 0.5s;
+    }
+    .success {
+      color: green;
+      text-align: center;
+      display: none;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>BOOK APPOINTMENT</h2>
+<p>Book an appointment at Nayanam Hospitals</p>
+
+<form id="appointmentForm">
+  <label>Name</label>
+  <input type="text" required>
+
+  <label>Phone Number</label>
+  <input type="tel" required>
+
+  <label>Appointment Date</label>
+  <input type="date" required>
+
+  <label>Branch</label>
+  <select required>
+    <option value="">Select Branch</option>
+    <option>Kurnool</option>
+    <option>Nandyal</option>
+    <option>Adoni</option>
+    <option>Kodumuru</option>
+    <option>Yemmiganur</option>
+  </select>
+
+  <button type="submit">BOOK APPOINTMENT</button>
+</form>
+
+<p class="success" id="successMsg">
+  Your request has been submitted
+</p>
+
+<script>
+document.getElementById("appointmentForm").onsubmit = function(e) {
+  e.preventDefault();
+
+  this.style.display = "none";
+  document.getElementById("successMsg").style.display = "block";
+
+  setTimeout(function() {
+    window.location.href = "callback.html";
+  }, 1500);
+};
+<\/script>
+
+</body>
+</html>
+  `);
+
+  win.document.close();
+}
+</script>
+
+</body>
+</html>
+
+<section id="therapy" style="padding:50px; background:#dae3e5; min-height:800px;">
+    <pre><h2 >                                                                        
+                                        Eye Therapy and Services           </h2>
+  <p>                             Nayanam Hospitals offers comprehensive eye care backed by expert doctors and cutting-edge technology. 
+                            We specialize in treating a wide range of eye conditions including cataracts, glaucoma,vision therapy , Dry Eye and more.</p> </pre>
+<div class="boxes-container">
+<a href="#" class="info-box1">
+<i class='bx bx-low-vision bx-flashing' ></i>
+<h1> Vision Therapy </h1>
+<p> Vision Therapy is a personalized program of eye exercises designed to improve visual skills and coordination.It helps treat problems like eye strain, poor focus, lazy eye, and binocular vision issues.
+The therapy enhances overall visual efficiency, making everyday tasks like reading and driving easier.</p></a>
+<a href="#" class="info-box2">
+<i class='bx bx-low-vision bx-flashing' ></i>
+<h1> Dry Eye </h1>
+<p> Dry eye, or dry eye disease (DED), is a common condition where the tear film on the eye’s surface becomes unstable. This can cause irritation, discomfort, and even affect your vision.</p></a>
+<a href="#" class="info-box3">
+<i class='bx bx-low-vision bx-flashing' ></i>
+<h1> Cataract</h1>
+<p> Cataracts are the most common cause of vision loss in people over age 40 and is the principal cause of blindness in the world.</p></a>
+<a href="#" class="info-box4">
+<i class='bx bx-low-vision bx-flashing' ></i>
+<h1>Glaucoma</h1>
+<p>Glaucoma is an eye condition that damages the optic nerve, often due to high eye pressure. It usually affects older adults and can lead to vision loss without early symptoms. Regular eye checkups are important to detect it early and prevent blindness.</p></a>
+<a href="#" class="info-box5">
+<i class='bx bx-low-vision bx-flashing' ></i>
+<h1> Diabetic Retinopathy</h1>
+<p>Diabetic Retinopathy is an eye condition caused by high blood sugar damaging the blood vessels in the retina. It can lead to vision loss if not treated early.</p></a>
+</section>
+<section id="about" style="padding:50px; background:#ccd0d1; min-height:800px;">
+  <h3> Over the Years of Experience</h3>
+  <h4><pre>Nayanam Hospitals is a renowned eye hospital and leader in ophthalmology. 
+            Our doctors and staff are focused on treating patients with eye disease and 
+            specialize in providing the best care and treatment for your eyes. 
+            From comprehensive eye exams to rare and complex vision conditions, 
+            our specialists ensure the best care that is customized for each patient’s need.</pre></h4>
+    <div class="image-wrapper">
+  <img src="https://my.clevelandclinic.org/-/scassets/images/org/eye/eye-care" alt="Eye Care">
+</div>
+<div class="image-wrapper1">
+  <img src=""
+</div>
+
+</section>
+
+
+
+
+
+
